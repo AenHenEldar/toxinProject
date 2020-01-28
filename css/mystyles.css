@@ -127,17 +127,41 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
 }
 
+h1 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+
+h2 {
+  font-family: Quicksand;
+  font-weight: bold;
+  font-size: 19px;
+  color: #1F2041;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+/* header styles start */
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-  width: 100%;
+  width: 1534px;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -150,7 +174,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 15px 140px;
+  padding: 15px 0;
 }
 
 .header__list {
@@ -173,18 +197,120 @@ body {
   text-decoration: none;
 }
 
-.header__item:nth-child(6) .header__link {
+.button {
   font-weight: bold;
+  border-radius: 22px;
   font-size: 12px;
-  line-height: 15px;
   text-transform: uppercase;
-  color: #BC9CFF;
-}
-
-.header__item:nth-child(7) .header__link {
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
+  padding: 10px 20px;
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   color: #FFFFFF;
 }
+
+.button--login {
+  color: #BC9CFF;
+  background: #FFFFFF;
+}
+
+.button--sign {
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+/* header styles end */
+/* main styles start */
+.main__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.main {
+  background: url('../img/jpg/hotel-main.jpg') no-repeat center;
+  margin: 0 auto;
+  width: 1534px;
+  height: 1022px;
+  background-size: cover;
+}
+
+.main__about-mini {
+  width: 297px;
+  text-align: right;
+}
+
+.main__rooms {
+  width: 380px;
+  height: 374px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 30px 30px 30px;
+  margin-top: 70px;
+}
+
+.field {
+  background: #FFFFFF;
+  padding: 10px 15px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.main__date-field {
+  width: 150px;
+}
+
+.button-rooms {
+  padding: 15px 20px;
+  width: 320px;
+}
+
+/* main styles end */
+/* footer styles start */
+.footer {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  width: 1534px;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.footer__copyright {
+  line-height: 17px;
+}
+
+.footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__twit {
+  background: url('../img/svg/twit-logo.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.footer__face {
+  background: url('../img/svg/face-logo.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.footer__inst {
+  background: url('../img/svg/inst-logo.svg') no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+/* footer styles end */

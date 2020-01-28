@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/mystyle.css">
-  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="css/mystyles.css">
   <title>Document</title>
 </head>
+
 <body>
-<div class="item"></div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link">
+            <img src="./img/svg/toxin-logo.svg" alt="Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»" class="header__logo-icon">
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#1" class="header__link">О нас</a>
+            </li>
+            <li class="header__item">
+              <a href="#2" class="header__link">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a href="#3" class="header__link">Вакансии</a>
+            </li>
+            <li class="header__item">
+              <a href="#4" class="header__link">Новости</a>
+            </li>
+            <li class="header__item">
+              <a href="#5" class="header__link">Соглашения</a>
+            </li>
+            <li class="header__item">
+              <a href="#6" class="header__link"><button class="button button--login" type="button" name="">Войти</button></a>
+            </li>
+            <li class="header__item">
+              <a href="#7" class="header__link"><button class="button button--sign" type="button" name="">Зарегистрироваться</button></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="main__wrapper">
+        <div class="main__rooms">
+          <h1>Найдём номера под ваши пожелания</h1>
+          <form class="main__form-rooms" action="index.html" method="post">
+            <h3>Прибытие</h3>
+            <input class="field main__date-field" type="text" placeholder='ДД.ММ.ГГГГ'>
+            <h3>Выезд</h3>
+            <input class="field main__date-field" type="text" placeholder='ДД.ММ.ГГГГ'>
+            <h3>Гости</h3>
+            <input class="field main__guest-field" type="text" placeholder='Сколько гостей'>
+            <button class="button button-rooms" type="button" name="">Подобрать номер</button>
+          </form>
+        </div>
+        <div class="main__about-mini">
+          <p>
+            Лучшие номера для вашей работы, отдыха и просто вдохновения
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__copyright">
+          <p>Copyright © 2018 Toxin отель. Все права зачищены.</p>
+        </div>
+        <div class="footer__icons">
+          <div class="footer__twit"></div>
+          <div class="footer__face"></div>
+          <div class="footer__inst"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
