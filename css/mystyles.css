@@ -172,14 +172,15 @@ h3 {
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
 .header__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .header__item {
@@ -222,8 +223,9 @@ h3 {
 .main__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+  height: 1004px;
 }
 
 .main {
@@ -237,16 +239,17 @@ h3 {
 .main__about-mini {
   width: 297px;
   text-align: right;
+  align-self: flex-end;
 }
 
 .main__rooms {
+  position: relative;
   width: 380px;
   height: 374px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 40px 30px 30px 30px;
   margin-top: 70px;
 }
 
@@ -254,12 +257,16 @@ h3 {
   background: #FFFFFF;
   padding: 10px 15px;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
   border-radius: 4px;
+  margin-bottom: 20px;
 }
 
 .main__date-field {
   width: 150px;
+}
+
+.main__guest-field {
+  width: 320px;
 }
 
 .button-rooms {

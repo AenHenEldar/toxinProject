@@ -1,0 +1,13 @@
+@import '../partials/header/header';
+@import 'reset';
+@import 'font';
+@import 'button';
+@import 'arrow-down';
+
+@import '../partials/main/main';
+@import 'form';
+
+.wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+  }

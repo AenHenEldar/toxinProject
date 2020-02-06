@@ -1,0 +1,19 @@
+.button {
+    font-weight: bold;
+    border-radius: 22px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #FFFFFF;
+  }
+  
+  .button--login {
+    color: #BC9CFF;
+    background: #FFFFFF;
+  }
+  
+  .button--sign {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  }

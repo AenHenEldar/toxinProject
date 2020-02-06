@@ -1,0 +1,45 @@
+.main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 1004px;
+  }
+  
+  .main {
+    background: url('../src/img/jpg/hotel-main.jpg') no-repeat center;
+    margin: 0 auto;
+    width: 1534px;
+    height: 1022px;
+    background-size: cover;
+  }
+  
+  .main__about-mini {
+    width: 297px;
+    text-align: right;
+    align-self: flex-end;
+  }
+  
+  .main__rooms {
+    position: relative;
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-top: 70px;
+  }
+  
+  .main__date-field {
+    width: 150px;
+  }
+  
+  .main__guest-field {
+    width: 320px;
+  }
+  
+  .button-rooms {
+    padding: 15px 20px;
+    width: 320px;
+  }

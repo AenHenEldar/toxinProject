@@ -1,0 +1,18 @@
+main.main
+    .wrapper
+      .main__wrapper
+        .main__rooms
+          h1 Найдём номера под ваши пожелания
+          form.main__form-rooms(action="index.html" method="post")
+            label 
+            h3 Прибытие 
+            input.main__date-field(type="text" placeholder='ДД.ММ.ГГГГ')
+            label
+            h3 Выезд
+            input.main__date-field(type="text" placeholder='ДД.ММ.ГГГГ')
+            label
+            h3 Гости
+            input.main__guest-field(type="text" placeholder='Сколько гостей')
+            button.button-rooms Подобрать номер
+        div.main__about-mini
+          p Лучшие номера для вашей работы, отдыха и просто вдохновения
