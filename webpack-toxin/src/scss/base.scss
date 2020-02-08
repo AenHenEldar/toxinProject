@@ -1,11 +1,15 @@
+// Header
 @import '../partials/header/header';
 @import 'reset';
 @import 'font';
 @import 'button';
-@import 'arrow-down';
-
+@import 'arrow';
+// Main
 @import '../partials/main/main';
 @import 'form';
+@import '../partials/main/main-footer/main-footer';
+// footer
+@import '../partials/footer/footer';
 
 .wrapper {
     max-width: 1160px;
