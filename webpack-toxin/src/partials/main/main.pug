@@ -6,17 +6,18 @@ main.main
         form.main__form-rooms(action="index.html" method="post")
           .main__input-wrapper
             .main__input-container1
-              label(for="date-field1") Прибытие 
-              input.field.main__date-field(id='date-field1' type="text" placeholder='ДД.ММ.ГГГГ')
-              .input-arrow-down
+              label Прибытие 
+              input.field.main__date-field(type="text" placeholder='ДД.ММ.ГГГГ' readonly)
+              .input-arrow-down.arrow-calendar
             .main__input-container2
-              label(for="date-field2") Выезд
-              input.field.main__date-field(id='date-field2' type="text" placeholder='ДД.ММ.ГГГГ')
-              .input-arrow-down
-          label(for="guest-field") Гости 
-          input.field.main__guest-field(id='guest-field' type="text" placeholder='Сколько гостей')
-          .input-arrow-down
-          button.button.form-button.button-arrow-right Подобрать номер
+              label Выезд
+              input.field.main__date-field(type="text" placeholder='ДД.ММ.ГГГГ' readonly)
+              .input-arrow-down.arrow-calendar
+          label Гости 
+          input.field.main__guest-field(type="text" placeholder='Сколько гостей' readonly)
+          .input-arrow-down.arrow-guest
+          button.button.form-button.button-arrow-right(type='button') Подобрать номер
+        .calender#calender
         .main__calendar
           .main__calendar-wrapper
             .main__calendar-header
@@ -24,55 +25,55 @@ main.main
               h2 Август 2019
               .arrow-right
             .main__calendar-main
-              ul.main__calendar-monday
+              ul.main__calendar-list.main__calendar-monday
                 li.main__calendar-item Пн
-                li.main__calendar-item 29
-                li.main__calendar-item 5
-                li.main__calendar-item 12
-                li.main__calendar-item 19
-                li.main__calendar-item 26
-              ul.main__calendar-tuesday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+              ul.main__calendar-list.main__calendar-tuesday
                 li.main__calendar-item Вт
-                li.main__calendar-item 30
-                li.main__calendar-item 6
-                li.main__calendar-item 13
-                li.main__calendar-item 20
-                li.main__calendar-item 27
-              ul.main__calendar-wednesday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+              ul.main__calendar-list.main__calendar-wednesday
                 li.main__calendar-item Ср
-                li.main__calendar-item 31
-                li.main__calendar-item 7
-                li.main__calendar-item 14
-                li.main__calendar-item 21
-                li.main__calendar-item 28
-              ul.main__calendar-thursday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+              ul.main__calendar-list.main__calendar-thursday
                 li.main__calendar-item Чт
-                li.main__calendar-item 1
-                li.main__calendar-item 8
-                li.main__calendar-item 15
-                li.main__calendar-item 22
-                li.main__calendar-item 29
-              ul.main__calendar-friday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+              ul.main__calendar-list.main__calendar-friday
                 li.main__calendar-item Пт
-                li.main__calendar-item 2
-                li.main__calendar-item 9
-                li.main__calendar-item 16
-                li.main__calendar-item 23 
-                li.main__calendar-item 30
-              ul.main__calendar-saturday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item
+              ul.main__calendar-list.main__calendar-saturday
                 li.main__calendar-item Сб
-                li.main__calendar-item 3
-                li.main__calendar-item 10
-                li.main__calendar-item 17
-                li.main__calendar-item 24
-                li.main__calendar-item 31
-              ul.main__calendar-sunday
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+              ul.main__calendar-list.main__calendar-sunday
                 li.main__calendar-item Вс
-                li.main__calendar-item 4
-                li.main__calendar-item 11
-                li.main__calendar-item 18
-                li.main__calendar-item 25
-                li.main__calendar-item 1
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
+                li.main__calendar-item 
             .main__calendar-footer
               a.main__link(href="#1") очистить
               a.main__link.main__link--apply(href="#2") применить
@@ -90,15 +91,15 @@ main.main
                   li -
                   li -
                 ul.main__numbers
-                  li 2
-                  li 1 
+                  li 0
+                  li 0
                   li 0
                 ul.main__pluses
                   li +
                   li +
                   li +
             .main__guests-footer
-              a.main__link(href="#1") очистить
+              a.main__link#clear(href="#1") очистить
               a.main__link.main__link--apply(href="#2") применить
                 
       div.main__about-mini
