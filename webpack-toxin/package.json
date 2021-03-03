@@ -22,7 +22,7 @@
     "html-webpack-pug-plugin": "^2.0.0",
     "image-webpack-loader": "^6.0.0",
     "node-sass": "^4.13.1",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-loader": "https://github.com/pugjs/pug-loader/tarball/master",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
